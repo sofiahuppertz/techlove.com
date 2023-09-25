@@ -1,0 +1,161 @@
+body, html {
+    margin: 0;
+    padding: 0;
+  }
+
+  #video-intro {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.image-container{
+
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes rotate {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(90deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    75% {
+      transform: rotate(270deg);
+    }
+  }
+
+  .rotating-image {
+    animation: rotate 20s linear infinite;
+  }
+
+
+  .band-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    padding: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.band-container:focus {
+  outline: none;
+}
+
+.poster {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    border: 5px solid black;
+}
+
+.poster:hover {
+  transform: scale(1.15);
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+  z-index: 1;
+}
+.poster img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.modal-text {
+  white-space: normal;
+  word-wrap: break-word;
+}
+.modal-dialog {
+  max-width: 50%;
+}
+  .curtain {
+    position: fixed;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: #CC0000;
+    z-index: 1000;
+  }
+
+
+  .curtain-left {
+    left: 0;
+    animation: curtain-open-left 3s forwards;
+  }
+
+  .curtain-right {
+    right: 0;
+    animation: curtain-open-right 3s forwards;
+  }
+
+  @keyframes curtain-open-left {
+    to {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes curtain-open-right {
+    to {
+      transform: translateX(100%);
+    }
+  }
+.curtain-left.open {
+    animation: curtain-open-left 2s forwards;
+  }
+
+.curtain-right.open {
+    animation: curtain-open-right 2s forwards;
+  }
+
+@media (max-width: 767.98px) {
+
+  .modal-image {
+    display: none;
+}
+
+  #video-intro {
+      margin-left: 20px;
+      margin-right: 20px;
+      font-size: 18px;
+  }
+
+  .image-container img {
+      width: 30px;
+  }
+
+  .band-container {
+      padding: 20px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .poster {
+      margin-right: 5px;
+  }
+
+  .poster img {
+      width: 250px;
+  }
+
+
+  .modal-dialog {
+      max-width: 90%;
+  }
+
+  h1 {
+      font-size: 1.5em;
+  }
+}
+

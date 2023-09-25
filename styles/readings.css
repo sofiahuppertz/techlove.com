@@ -1,0 +1,63 @@
+.intro-text {
+    color: black;
+    font-size: 24px;
+    font-family: 'Didot', serif;
+    text-align: center;
+    padding: 40px 10%;
+    margin-top: 73px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.8;
+}
+.thumbnails {
+    width: 250px;
+    margin-right: 35px;
+}
+
+.read-card {
+    padding: 20px;
+    margin: 10%;
+    align-items: center;
+    width: 80%;
+    display: flex;
+    border-radius: 15px;
+    border: 2px #0000CC solid;
+    background-color: #FFFFCC;
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+.read-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+  @media only screen and (max-width: 768px) {
+
+    .intro-text {
+        font-size: 20px;
+        padding: 20px 5%;
+        margin-top: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .thumbnails {
+        width: 200px;
+        margin-right: 15px;
+    }
+
+    .read-card {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        margin: 5%;
+    }
+
+    .read-title {
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+

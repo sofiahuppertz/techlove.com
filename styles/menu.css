@@ -1,0 +1,116 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.divider {
+  border-bottom: 1px solid #000;
+  margin: 10px;
+}
+
+.red-box {
+  background-color: #CC0000;
+  color: #FFFFFF;
+  font-family: 'Cinzel', serif;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#header {
+  color: #00008B;
+  background-color: white;
+  font-size: 40px;
+  font-family: Tahoma, Verdana, sans-serif;
+  font-weight: 550;
+  text-align: left;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  z-index: 3;
+  position: relative;
+}
+
+#menu-text {
+  text-decoration: underline;
+}
+
+#menu-button {
+  color: black;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1001;
+  background-color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+#menu-button:focus {
+  outline: none;
+}
+
+.side-menu {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: -200px;
+  width: 200px;
+  height: 100%;
+  background-color:#00008B;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 80px;
+  font-size: 22px;
+  font-family: Geneva, Verdana, sans-serif;
+  font-weight: 500;
+}
+
+.side-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.side-menu ul li {
+  padding: 25px;
+  text-align: right;
+}
+
+.side-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#heart{
+  width: 60px;
+}
+
+@media (max-width: 600px) {
+  #header {
+      font-size: 24px;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      padding-left: 10px;
+  }
+
+  #menu-button {
+      top: 10px;
+      right: 10px;
+      font-size: 18px;
+      padding: 8px;
+  }
+
+  .side-menu {
+      width: 150px;
+      font-size: 18px;
+  }
+
+  #heart {
+    width: 30px;
+  }
+}
+
+
